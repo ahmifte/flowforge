@@ -38,6 +38,25 @@ export default function HomePage() {
           </Link>
         ))}
       </section>
+
+      <section className="mt-12 flex flex-col items-start justify-between gap-4 rounded-2xl border border-accent bg-card p-8 sm:flex-row sm:items-center">
+        <div>
+          <h2 className="text-xl font-semibold">
+            Want these built around your workflows?
+          </h2>
+          <p className="mt-1 text-sm text-muted">
+            I build and deploy custom AI automations for your team — fixed scope,
+            fixed price.
+          </p>
+        </div>
+        <Link
+          href="/services"
+          className="inline-flex flex-shrink-0 items-center gap-2 rounded-md bg-accent px-5 py-3 font-medium text-accent-fg hover:opacity-90"
+        >
+          See packages &amp; pricing
+          <ArrowRight className="h-4 w-4" />
+        </Link>
+      </section>
     </>
   );
 }

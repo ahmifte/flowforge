@@ -44,8 +44,12 @@ Open [http://localhost:3000](http://localhost:3000), add your key under **API ke
 
 Two revenue streams from one codebase:
 
-1. **Done-for-you setup** — sell automation setup as a fixed package plus a monthly maintenance retainer.
+1. **Done-for-you setup** — sell automation setup as a fixed package plus a monthly maintenance retainer. A ready-to-use sales page lives at [`/services`](app/services/page.tsx) with packages, pricing, process, and FAQ, all driven by [`lib/service.ts`](lib/service.ts). Point the **Book a call** buttons at your scheduler with `NEXT_PUBLIC_BOOKING_URL` (or set `NEXT_PUBLIC_CONTACT_EMAIL` for a mailto fallback).
 2. **Self-serve SaaS** (optional) — host it, keep the free BYO-key tier, and gate scheduling/history behind a paid tier.
+
+### Selling the service
+
+Edit your packages and copy in [`lib/service.ts`](lib/service.ts), set `NEXT_PUBLIC_BOOKING_URL`, and the live demo on the home page funnels visitors straight to `/services` and a booked call.
 
 ## Scripts
 
